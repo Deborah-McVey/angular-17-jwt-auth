@@ -30,4 +30,13 @@ To be read... Tutorial from
 https://www.bezkoder.com/angular-17-jwt-auth/ from December 21, 2023.
 Technology: Angular 17 RxJS 7 Bootstrap 4 angular 17 globally installed in cmd, project set up in VS Code, VS terminal: cd to folder on my computer create project, cli commands: ng new angular-17-jwt-auth --no-standalone --no-strict --style=css --routing=false
  , Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? No, open folder, see: no app.routes.ts, no app.config.ts, no app.config.server.ts , open new terminal, Bootstrap framework: npm i bootstrap@4.6.2 , angular.json path in styles above styles/css put "../node_modules/bootstrap/dist/css/bootstrap.min.css", and scripts, 
- make components and services,
+ make components and services with --skip-tests,
+ in src folder, make _helpers folder with http.interceptor.ts file (error in tutorial has auth.interceptor.ts file), tutorial also shows environments in file structure, 
+ add app-routing.module.ts file,
+ http.interceptor.ts,
+ app.module.ts: import approutingmodule, formsmodule, and httpinterceptorproviders,
+ auth.service.ts: login, register, logout,
+ storage.service.ts: saveUser, getUser, isLoggedIn,
+ user.service.ts: getPublicContent, getUserBoard, getModeratorBord, getAdminBoard, 
+ scrolled down in tutorial and added app-routing.module.ts content, 
+ app.module.ts: commented out httpInterceptorProviders, to get rid of error messages, 
